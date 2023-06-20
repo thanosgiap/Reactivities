@@ -1,4 +1,3 @@
-import react from 'react'
 import { Activity } from '../../../app/models/activity'
 import { Button, Item, Label, Segment } from 'semantic-ui-react';
 
