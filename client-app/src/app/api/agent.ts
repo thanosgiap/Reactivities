@@ -1,7 +1,6 @@
 import axios, { AxiosResponse } from "axios";
-import { url } from "inspector";
 import { Activity } from "../models/activity";
-import { threadId } from "worker_threads";
+
 
 const sleep = (delay: number) => {
     return new Promise((resolve) => {
