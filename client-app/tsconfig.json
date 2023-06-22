@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "types": ["react"],
     "lib": [
       "dom",
       "dom.iterable",
