@@ -18,6 +18,7 @@ using Application.Activities;
 using Application.Core;
 using AutoMapper;
 using API.Extensions;
+using FluentValidation.AspNetCore;
 
 namespace API
 {
@@ -29,13 +30,16 @@ namespace API
             _config = config;
         }
 
-        
+
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        [Obsolete]
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers().AddFluentValidation(config => {
+                config.RegisterValidatorsFromAssemblyContaining<Create>();
+            });
             services.AddApplicationServices(_config);
         }
 
