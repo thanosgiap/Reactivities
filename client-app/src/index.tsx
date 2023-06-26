@@ -3,6 +3,7 @@ import './app/layout/styles.css';
 import reportWebVitals from './reportWebVitals';
 import 'react-calendar/dist/Calendar.css'
 import 'semantic-ui-css/semantic.min.css'
+import 'react-toastify/dist/ReactToastify.min.css'
 import { StoreContext, store } from './app/stores/store';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './app/router/Routes';
